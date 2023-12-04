@@ -15,7 +15,6 @@ import { MatIconModule } from '@angular/material/icon';
 
 
 import {MatTreeModule} from '@angular/material/tree';
-import { InputsComponent } from './inputs/inputs.component';
 
 import {MatButtonModule} from '@angular/material/button';
 // import {NoopAnimationsModule} from '@angular/platform-browser/animations';
@@ -32,7 +31,6 @@ import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { AngularRoutingModule } from './angular-routing';
 import { MenuComponent } from './menu/menu.component';
-import { InputsListComponent } from './inputs-list/inputs-list.component';
 import { FileAnalyzerComponent } from './file-analyzer/file-analyzer.component';
 import { GuideComponent } from './guide/guide.component';
 import { GuideMenuComponent } from './guide-menu/guide-menu.component';
@@ -49,9 +47,7 @@ import { FileUploadComponent } from './file-upload/file-upload.component';
 @NgModule({
   declarations: [
     AppComponent,
-    InputsComponent,
     MenuComponent,
-    InputsListComponent,
     FileAnalyzerComponent,
     GuideComponent,
     GuideMenuComponent,
