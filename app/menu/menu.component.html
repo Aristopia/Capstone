@@ -1,0 +1,17 @@
+<main>
+    <section class="menu" id="menuSection">
+
+            <mat-button-toggle-group class = "b">
+                <mat-button-toggle class="c" (click)="switchContent('home-page')">Home</mat-button-toggle>
+                <mat-button-toggle class="c" (click)="switchContent('guide')">Guide</mat-button-toggle>
+                <mat-button-toggle class="c" (click)="switchContent('file-analyzer')">File Analyzer</mat-button-toggle>
+              </mat-button-toggle-group>
+              
+    </section>
+
+    <section id="contentSection" [ngSwitch]="currDisplay">
+
+        <section *ngSwitchCase="'t'"></section>
+        <app-home *ngSwitchDefault></app-home>
+    </section>
+</main>

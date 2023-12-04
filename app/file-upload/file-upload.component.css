@@ -1,0 +1,137 @@
+/* Add this CSS to a separate file */
+*{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+    background-color: grey; 
+    color: black; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control,
+.input-file,
+.alert-danger,
+.button,
+.btn-primary,
+.button-success,
+.button-default,
+.line,
+pre {
+    padding: 25px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.form-control {
+    cursor: pointer; 
+    opacity: 0; 
+    position:absolute; top: 220px; left: 0px;
+}
+
+.input-file,
+.line {
+
+    padding: 15px;
+    border: 10px solid grey; 
+    border-radius: 6px;
+    font-size: 35px; 
+    text-align: center; 
+    color: white;
+    background-color: grey;
+}
+
+.input-file {
+    display: inline-block;
+    margin-top: 10px; 
+    position: relative; 
+    opacity: 1; 
+}
+
+
+/* .choose-file-button {
+    margin-top: 10px; 
+    padding: 15px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 25px; 
+    background-color: aquamarine;
+    color: #fff; 
+} */
+
+.alert-danger {
+    color: #721c24; 
+    background-color: #f8d7da;
+    border: 2px solid #f5c6cb; 
+    border-radius: 6px;
+}
+
+.button,
+.button-success,
+.button-default,
+.btn-primary {
+    padding: 15px 25px; 
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.button-success {
+    background-color: aquamarine; 
+    color: #fff; 
+}
+
+.button-default {
+    background-color: #555; 
+    color: #fff; 
+}
+
+.btn-primary {
+    background-color: aquamarine;
+    color: #fff; 
+}
+
+.row {
+    margin: 0 -20px;
+}
+
+.col-xs-3,
+.col-xs-9 {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.line-container {
+    width: 80%; 
+    text-align: center;
+}
+
+.line {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 2px solid #ccc; 
+    border-radius: 6px;
+    font-size: 25px; 
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+

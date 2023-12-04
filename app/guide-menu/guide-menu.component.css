@@ -1,0 +1,17 @@
+* {
+    background-size:auto;
+    background-color: aquamarine;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+.menu {
+
+    color: black;
+}
+
+.c {
+    background-color: grey;
+    color: black;
+    border: aquamarine;
+}

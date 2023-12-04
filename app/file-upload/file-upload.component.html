@@ -1,0 +1,40 @@
+<!-- <input type="file" class="file-upload" onchange="console.log(event.target.files)"> -->
+
+<form (ngSubmit)="newCSV(csvForm)" #csvForm="ngForm">
+    <div class="form-group">
+        <br><label for="csvForm" class="input-file"> Input File </label>
+        <input type="file" class ="form-control" id="file"
+            required
+            ngModel name="csvForm"
+            #filename="ngModel"
+            ngModel (change)="getFiles($event)"><br>
+        <div [hidden]="csvForm.valid || csvForm.pristine"
+            class="alert alert-danger">
+            File is Required
+        </div>
+    </div>
+
+    <button type="submit" class="button button-success"
+    [disabled]="!csvForm.form.valid"(click)="onSubmit()"> Submit </button>
+
+    <button type="button" class="button button-default" (click)="csvForm.reset()">
+        New CSV File
+    </button>
+
+
+ </form>
+
+<div [hidden]="!submitted">
+    <form (ngSubmit)="line(csvLineForm)" #csvLineForm="ngForm">
+        <label for="line">Inspect a specific line number</label>
+        <input type="number" class="line" id="line" required ngModel name="lineNumber">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+    <pre [innerHTML]="b"></pre>
+    <h2>File Contents:</h2>
+    <div class="row">
+      <pre [innerHTML]="editedContent"></pre>
+    <br>
+    <button type="button" class="btn btn-primary" (click)="submitted=false">Edit</button>
+  </div>

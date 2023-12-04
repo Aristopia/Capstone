@@ -1,0 +1,19 @@
+<main>
+    <section class="menu" id="menuSection">
+
+            <mat-button-toggle-group class = "b">
+                <mat-button-toggle class="c" (click)="switchContent('guide/menu-home')">Guide Home</mat-button-toggle>
+                <mat-button-toggle class="c" (click)="switchContent('guide/linux-guide')">Setting up Linux</mat-button-toggle>
+                <mat-button-toggle class="c" (click)="switchContent('guide/boot-usb')">Boot into Kali</mat-button-toggle>
+                <mat-button-toggle class="c" (click)="switchContent('guide/setup-guide')">Kali set-up</mat-button-toggle>
+                <mat-button-toggle class="c" (click)="switchContent('guide/kismet-guide')">Using Kismet</mat-button-toggle>
+                <mat-button-toggle class="c" (click)="switchContent('guide/wireshark')">Wireshark</mat-button-toggle>
+              </mat-button-toggle-group>
+              
+    </section>
+
+    <section id="contentSection" [ngSwitch]="currDisplay">
+        <section *ngSwitchCase="'t'"></section> 
+        <app-menu-home *ngSwitchDefault="'app-menu-home'"></app-menu-home>
+    </section>
+</main>

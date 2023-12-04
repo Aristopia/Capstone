@@ -1,0 +1,11 @@
+#drop_zone {
+    border: 5px solid blue;
+    width: 200px;
+    height: 100px;
+  }
+  * {
+    background-size:auto;
+    background-color: aquamarine;
+    text-align:  center;
+    align-content: center;
+}

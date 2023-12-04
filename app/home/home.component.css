@@ -1,0 +1,27 @@
+
+
+main {
+    background-color :black;
+    color: white;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+main h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    border: 1px solid aquamarine;
+    border-radius: 6px;
+    padding: 10px;
+    box-shadow : 5px 5px 5px;
+    border-style: solid;
+    border-width: 2px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 400;
+}
+
+main h2:last-of-type {
+    margin-bottom: 0;
+}
