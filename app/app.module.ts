@@ -31,7 +31,6 @@ import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { AngularRoutingModule } from './angular-routing';
 import { MenuComponent } from './menu/menu.component';
-import { FileAnalyzerComponent } from './file-analyzer/file-analyzer.component';
 import { GuideComponent } from './guide/guide.component';
 import { GuideMenuComponent } from './guide-menu/guide-menu.component';
 import { GuideLinuxComponent } from './guide-linux/guide-linux.component';
@@ -48,7 +47,6 @@ import { FileUploadComponent } from './file-upload/file-upload.component';
   declarations: [
     AppComponent,
     MenuComponent,
-    FileAnalyzerComponent,
     GuideComponent,
     GuideMenuComponent,
     GuideLinuxComponent,
